@@ -1,12 +1,12 @@
 ### Criptografa arquivos com aes.
 
-cripto
+criptografa com aes
 ```bash
 openssl enc -aes-256-cbc  -pbkdf2  -salt -in arquivo.txt -out arquivo_criptografado2.enc
 
 ```
 
-decripto
+decriptografa
 ```bash
 openssl enc -aes-256-cbc  -pbkdf2 -d -in arquivo_criptografado2.enc -out arquivo_descriptografado2.txt
 ```

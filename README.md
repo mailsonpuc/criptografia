@@ -1,12 +1,12 @@
 ### Criptografa arquivos com aes.
 
-criptografa com aes
+#### criptografa com aes
 ```bash
 openssl enc -aes-256-cbc  -pbkdf2  -salt -in arquivo.txt -out arquivo_criptografado2.enc
 
 ```
 
-decriptografa
+#### decriptografa
 ```bash
 openssl enc -aes-256-cbc  -pbkdf2 -d -in arquivo_criptografado2.enc -out arquivo_descriptografado2.txt
 ```
@@ -19,3 +19,13 @@ openssl enc -aes-256-cbc  -pbkdf2 -d -in arquivo_criptografado2.enc -out arquivo
 |-in arquivo.txt|  Especifica o arquivo de entrada.                                                                |
 |-out arquivo_criptografado.enc|Especifica o nome do arquivo de saída criptografado.                               |
 
+---
+#### Criptografa com ccrypt
+```bash
+ccrypt arquivo.txt
+```
+
+#### descriptografa 
+```bash
+ccrypt -d arquivo.txt.cpt
+```
